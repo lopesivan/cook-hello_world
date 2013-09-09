@@ -1,53 +1,91 @@
-comando: git tag -n1
 Mostra as tags do Master.
+~~~
+   git tag -n1
+~~~
 
-comando: git tag -n1
 Mostra as tags do Master com o comentário ao lado.
+~~~
+   git tag -n1
+~~~
 
-comando: git add .
 Adiciona os arquivos do projeto no repositório.
+~~~
+   git add .
+~~~
 
-comando: git clean -dfx
 Remove os arquivos não adicionados ao projeto.
+~~~
+   git clean -dfx
+~~~
 
-comando: gitg
-Mostra o histórico do git em modo grafico
+Mostra o histórico do git em modo gráfico.
+~~~
+   gitg
+~~~
 
-comando: git tag <TAGNAME> -f -a
 Se você errou na descrição da tag use esse comando para corrigir a mensagem.
-	exemplo: git tag 0.1.0 -f -a
+~~~
+   git tag <TAGNAME> -f -a
 
-comando: git checkout -- <file>
+   *exemplo:* 
+   git tag 0.1.0 -f -a
+~~~
+
 Recupera arquivo deletado existente no master.
-	exemplo: rm configure.ac  # removi o arquivo
-	         git checkout -- configure.ac # recuperei o arquivo perdido.
+~~~
+   git checkout -- <file>
 
-comando: git pull
+   *exemplo:* 
+   rm configure.ac  # removi o arquivo
+   git checkout -- configure.ac # recuperei o arquivo perdido.
+~~~
+
 Atualiza clonado descendo atualização do master para o clonado.
 Master->Clonado
+~~~
+   git pull
+~~~
 
-comando: git push
 Atualiza master subindo atualização do clonado para o master.
 Clonado->Master
+~~~
+   git push
 
-comando: git checkout master
+  se github faça
+  git push origin
+~~~
+
 É um cd master
+~~~
+   git checkout master
+~~~
 
-comando: git checkout develop
 É um cd develop
+~~~
+   git checkout develop
+~~~
 
-comando: git clone file:///workspace/curriculum-vitae -b master
-clona o arquivo localmente.
+Clona o arquivo localmente.
+~~~
+   git clone file:///workspace/curriculum-vitae -b master
+~~~
 
-commando: git submodule add  <GIT-URL> <PATH>
 cria arquivo '.gitmodules' e importa os arquivos do modulo
-	exmplo: git submodule add  file:///workspace/git-tools  tools -b master
+~~~
+   git submodule add  <GIT-URL> <PATH>
 
-commando: git tag -d <TAGNAME>
-          git push origin :<TAGNAME>
-deleta tag no github
+   *exmplo:* 
+   git submodule add  file:///workspace/git-tools  tools -b master
+~~~
 
-commando: git tag -a <TAGNAME> -m "Version <TAGNAME> Stable"
-          git push --tags
-sobe a tag criada para o github.
+Deleta tag no github
+~~~
+   git tag -d <TAGNAME>
+   git push origin :<TAGNAME>
+~~~
 
+Sobe a tag criada para o github.
+~~~
+   git tag -a <TAGNAME> -m "Version <TAGNAME> Stable"
+   git push --tags
+~~~
