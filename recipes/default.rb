@@ -50,15 +50,15 @@ end
 # of the deployed file. Chef is fairly efficient about things like that.  
 # It never does more work than is necessary.
 #
-template "/home/hello/hello-app/config.json" do
-    source "config.json.erb"
-    variables(
-        :home_dir => "/home/hello/hello-app"
-    )
-    user "hello"
-    group "hello"
-    mode 0600
-end
+#template "/home/hello/hello-app/config.json" do
+#    source "config.json.erb"
+#    variables(
+#        :home_dir => "/home/hello/hello-app"
+#    )
+#    user "hello"
+#    group "hello"
+#    mode 0600
+#end
  
  
 #
