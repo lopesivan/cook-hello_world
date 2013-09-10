@@ -5,9 +5,6 @@ template "#{ENV['HOME']}/hello-world.txt" do
   mode '0664'
 end
 
-%w(build-essential curl).each do |pkg|
-  package pkg
-end
 #
 # Create a user.
 # manage_home is set to true so that his home directory will be created.
